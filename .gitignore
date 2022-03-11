@@ -1,3 +1,13 @@
+#### Gitignore prefixes
+/gitignore*
+gitignore*
+*-gitignore*
+*_gitignore*
+/gitignore-*
+*/gitignore_*
+*/gitignore-*
+*gitignoreThis*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
