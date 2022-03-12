@@ -1,9 +1,9 @@
-## If you are trying to help with t33d and work on devloping i
+## t33d git dev cmds help
+##   If you are trying to help with t33d and work on devloping i
 ##   you should probably talk to Joe. Especially if you're a beginner student,
 ##   you may not want to worry about any of this git stuff!
 ##
-
-## t33d git dev cmds help
+##
 ##   It is generally assumed for this project developers are using
 ##   something like bash, and are in a unix like environment
 ##   git usage in gereral is most straightforward in unix like envs
@@ -18,23 +18,26 @@
 
 
 ## Git commit bash commands, to be used by user directly in control of git repo...
-
-
-
+##
+##
+##
 ## Most of the time:
 ##   git changes, commits and pushes should be done as seperate commands.
 ##   To avoid typing too much, consider using aliases for the commands.
 ##
 ## Commands to put changes made into the actual repo:
 # git add -A
-# (export t33dTmpGitCommitMsg="" ; git commit -m "$t33dTmpGitCommitMsg" )
+# (export t33dTmpGitCommitMsg='' ; git commit -m "$t33dTmpGitCommitMsg" )
 # git push origin main
 
 
 
 
 ## Git commit, msg, push oneliner.  Be careful with this!
-# teedTmpGitCommitMsg="" bash -c 'git add -A && git commit -m "$t33dTmpGitCommitMsg" && git push origin main'
+# (export t33dTmpGitCommitMsg='' ; git add -A && git commit -m "$t33dTmpGitCommitMsg" && git push origin main )
+##
+##  You'll have to make the message at the beginning not blank
+##  put a msg in the first set of quotes!
 ##
 ##   So that you don't reuse the msg carelessly
 ##   be sure to execute the command first as a comment,
@@ -46,13 +49,8 @@
 
 
 
-
-
-## (it won't truly export because the export only happens in the subshell, due to parens
-##
-# (export FOO=bar; somecommand someargs | somecommand2)
-
-#### THE BELOW WON'% WORK WITHOUT ADJUSTMENT, Sh3ll
+#### THE BELOW IS JUST NOTES PROBABLY SHOULD NOT BE USED
+##     ADJUSTMENT NEEDED
 ## Other ways of using tmp vars for single lines
 # FOO=bar bash -c 'somecommand someargs | somecommand2'
 # 
