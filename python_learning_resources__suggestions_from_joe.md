@@ -84,8 +84,8 @@ http://www.maya-python.com/<br>
 
 
 
-Python Learning Games - Recommendations by Joe Crawford
-==============================================================
+Python Learning Games
+===============================
 
 Playing educational games is a fun and easy way to learn programming. Even if some of these might seem like they are "for kids", they can still be very useful for any beginners. These are generally games you play by writing Python code!
 
@@ -121,12 +121,12 @@ Books About Python in General
 ===================================
 
 ### Dive Into Python 3
-https://diveinto.org/python3/table-of-contents.html
-(This is a really amazing but less easy book.
-It is especially useful for people already familiar with other programming languages.)
+https://diveinto.org/python3/table-of-contents.html<br>
+(This is a really amazing but less easy book.<br>
+It is especially useful for people already familiar with other programming languages.)<br>
 
 
 ### Python For Newbies,  Short "Textbook", Has Links To More Books
-https://temporaryland.wordpress.com/2021/06/16/python-3-x-for-newbies-part1/
-https://temporaryland.wordpress.com/2021/06/16/python-3-x-for-newbies-part2/
+https://temporaryland.wordpress.com/2021/06/16/python-3-x-for-newbies-part1/<br>
+https://temporaryland.wordpress.com/2021/06/16/python-3-x-for-newbies-part2/<br>
 
