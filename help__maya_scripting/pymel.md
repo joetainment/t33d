@@ -1,7 +1,7 @@
 Pymel
 ========
 
-Because Python in Maya is implemented in such a strange way, and doesn't feel very normal (or "pythonic") some kind volunteers put together a system called Pymel metal that makes it a lot easier to use many of Maya features from Python, especially some of the trickier more advanced features.
+Because Python in Maya is implemented in such a strange way, and doesn't feel very normal (or "pythonic") some kind volunteers put together a system called Pymel that makes it a lot easier to use many of Maya features from Python, especially some of the trickier more advanced features.
 
 
 Pymel's main webpage - https://github.com/LumaPictures/pymel
