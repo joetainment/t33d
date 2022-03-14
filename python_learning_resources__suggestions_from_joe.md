@@ -8,31 +8,37 @@ Python Learning Resources - Suggestions From Joe Crawford
 
 Scripting Notes and Articles From Some of the Best Experts In 3D CG Scripting
 =====================================================================
-Chad Vernon's Maya Python Resources:
-    This is one of the best collection of notes about Python In Maya
-    https://www.chadvernon.com/resources/
 
-    And his own guide on Maya Python:
-    https://www.chadvernon.com/python-scripting-for-maya-artists/
+### Chad Vernon's Maya Python Resources:
 
+This is one of the best collection of notes about Python In Maya
+https://www.chadvernon.com/resources/
 
-Maya MEL:
-    A lot of obscure information about MEL
-    http://ewertb.mayasound.com/maya.php
+And his own guide on Maya Python:
+https://www.chadvernon.com/python-scripting-for-maya-artists/
 
 
 
-Amazing website for more advanced topics relating to professional use of Python in our industries:
+### Maya MEL:
+A lot of obscure information about MEL
+http://ewertb.mayasound.com/maya.php
+
+
+
+### More advanced topics (professional use of Python in our industries):
 https://theodox.github.io/
 
 
-Official Maya Documentation For Scripting
+### Official Maya Documentation For Scripting
 (Remember, these links will be different depending on which version of Maya you are using.)
 
-    Maya commands reference (both Python and Mel):
-            Help > Maya scripting reference > Python Command Reference
-            Should take you to a page similar to this:
-              https://help.autodesk.com/view/MAYAUL/2020/ENU/index.html?contextId=COMMANDSPYTHON-INDEX
+Maya commands reference (both Python and Mel):
+
+Help > Maya scripting reference > Python Command Reference
+
+Should take you to a page similar to this:
+
+https://help.autodesk.com/view/MAYAUL/2020/ENU/index.html?contextId=COMMANDSPYTHON-INDEX
 
 
 
