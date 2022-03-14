@@ -4,8 +4,9 @@ Python Learning Resources - Suggestions From Joe Crawford
 <br><br><br><br>
 
 
-Scripting Notes and Articles From Some of the Best Experts In 3D CG Scripting
+Scripting Notes and Articles 
 =====================================================================
+(From Some of the Best Experts In 3D CG Scripting)
 
 ### Chad Vernon's Maya Python Resources:
 
