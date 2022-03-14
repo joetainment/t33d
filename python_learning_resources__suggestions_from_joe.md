@@ -8,19 +8,18 @@ Python Learning Resources - Suggestions From Joe Crawford
 
 Scripting Notes and Articles From Some of the Best Experts In 3D CG Scripting
 =====================================================================
-Chad Vernon's Maya Python Resources
+Chad Vernon's Maya Python Resources:
+    This is one of the best collection of notes about Python In Maya
     https://www.chadvernon.com/resources/
-    (This is one of the best collection of notes about Python In Maya)
 
-    And his own guide on Maya P)ython...
-        https://www.chadvernon.com/python-scripting-for-maya-artists/
+    And his own guide on Maya Python:
+    https://www.chadvernon.com/python-scripting-for-maya-artists/
 
 
 Maya MEL:
+    A lot of obscure information about MEL
+    http://ewertb.mayasound.com/maya.php
 
-Notes http://ewertb.mayasound.com/maya.php
-
-A lot of obscure information about MEL
 
 
 Amazing website for more advanced topics relating to professional use of Python in our industries:
