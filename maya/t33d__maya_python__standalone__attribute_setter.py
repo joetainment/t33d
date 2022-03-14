@@ -8,7 +8,9 @@ import maya.cmds as cmds
 import math, random, traceback
 
 ## Short help msg shown at top of window
-BANNER=""" You can use python expressions, and use "a" for the old attribute value, and i for the object index.
+BANNER=""" You can use python expressions.
+Use "a" for the old attribute value,
+and i for the object index.
 So to double the values, you could use:    a * 2
 To stack you could use:    a + i
 To randomize from 20 to 30 could use:  random.uniform( 20.0, 30.0 )
@@ -22,20 +24,21 @@ class T33d_AttributeSetterUi(object):
         cmds.deleteUI( self.win )    
     self.win = cmds.window( self.win, title='T33d Attribute Setter' )
     print( "Creating UI:", self.win )
-    self.col = cmds.columnLayout( parent=self.win )
+    self.col = cmds.columnLayout( adjustableColumn=True, parent=self.win )
     self.text = cmds.text(BANNER, align="left")
     ## Text label that says "Attribute to change:"
-    self.attributeLabel = cmds.text( 'Attribute to change:', parent=self.col )
+    self.attributeLabel = cmds.text( 'Attribute to change:', align="left", parent=self.col )
     ## Text entry field, a place where the user will type in the attribute to change
-    self.attributeField = cmds.textField(  width=600, parent=self.col   )
+    self.attributeField = cmds.textField( parent=self.col   )
 
     ## Text label that says "New value for attribute:"
-    self.valueLabel = cmds.text( 'New value for attribute:', parent=self.col )
+    self.valueLabel = cmds.text( 'New value for attribute:', align="left", parent=self.col )
     ## Text entry field, a place where the user will type the new value to set the attribute to
-    self.valueField = cmds.textField( width=600, parent=self.col )
+    self.valueField = cmds.textField( parent=self.col )
 
     self.go = cmds.button(
       label="Set Attributes",
+      align="left",
       parent=self.col,
       command=lambda x: self.setAttributes(  )
     )
