@@ -338,43 +338,41 @@ What is the purpose of the keyword def, as in, what does it do?
 What type would be returned by calling changeNumber?
 <br><br><br>
 
-</pre>
-
 
 
 
 Exercise 4
 ========================
-<pre>
 
 
 Write Python code to create a variable called width and assign it a value of 6
-
+<br><br><br>
 
 
 
 Write a line of code that creates a variable called position that is a tuple containing 3 coordinates, so that it could act like a Vector3 storing x, y, and z coordinates. each of which is a floating point number.  Make it have a value of 3.4 in x, 8.0 in y, and -1.54 in z.
-
+<br><br><br>
 
 
 Write a line of code that creates a variable called scale, that is a list which uses floats for storing x, y, and z values to represent scale.  Make it represent a scaling of 1.21, -2.42, 3.63.
 (The is just like the answer to the last question, but now called scale, and using a list instead of a tuple.)
+<br><br><br>
 
 
-
-Write a line of code that creates a dictionary called books, with keys that are titles of books and values that are the author. Add one title called “Calvin and Hobbes” by author “Bill Waterson”, and another title called “Life In Hell”, by “Matt Groening”
-
+Write a line of code that creates a dictionary called books, with keys that are titles of books and values that are the author. Add one title called "Calvin and Hobbes" by author "Bill Waterson", and another title called "Life In Hell", by "Matt Groening"
+<br><br><br>
 
 
 
 What is the primary difference between a tuple and a list? (not just the syntax)
-
+<br><br><br>
 
 
 
 Are items in a python dictionary in any particular order?
 (hint, see:   https://docs.python.org/2/tutorial/datastructures.html#dictionaries)
 
+<br><br><br>
 
 ---------------------------------------------
 For the next questions, assume the following code:
@@ -390,36 +388,36 @@ for i, obj in enumerate(objs):
 
 
 What is the type of objs?
-
+<br><br><br>
 
 
 
 
 What type is the type of obj inside the for loop?
-
+<br><br><br>
 
 
 
 
 What is the type of i inside the loop?
-
+<br><br><br>
 
 
 
 
 What is the value of i during the second time that the contents of the for loop run (the second iteration)?
+<br><br><br>
 
 
 
-
-Given the list:  [ apples, pears, bananas ]  Write a line of code  to insert an item “grapes” between pears and bananas.  (You may have to research to find this answer.  As a hint, look for python documentation about inserting into a list.)
-
+Given the list:  ```[ apples, pears, bananas ]```  Write a line of code  to insert an item "grapes" between pears and bananas.  (You may have to research to find this answer.  As a hint, look for python documentation about inserting into a list.)
+<br><br><br>
 
 
 
 
 Write a line of code to combine the lists fruits and vegetables into a list called food. (Again, you may need to research this.)
-
+<br><br><br>
 
 
 
@@ -429,17 +427,14 @@ Write a line of code to create a dictionary called stats, which remembers that w
 
 
 Given a dictionary stats in which the keys were the names of sports teams, as strings, and the values were the number of wins the team had in the season, write a short python program which would print the name of each team along with how many wins the team had. (do not simply print the dictionary itself, print individual items from it)
+<br><br><br>
 
-
-
-</pre>
 
 
 
 Exercise 5 - Problem Solving
 ================================
 
-<pre>
 
 Read the directions and follow the instructions.  Generally, for this assignment you are just finding solution to problems in the shown code, and/or adding some additional code to accomplish the requested tasks.
 
@@ -451,7 +446,7 @@ When finished, each question's code should run as a Maya python script, and prod
 Note, please scroll down,  I had to fit them on pages nicely, so it doesn't start until the next page!
 
 
-
+```
 ##############  Question 1 Code  ############################
 Import  maya.commands as cmds 	## Has 2 typo's .   Fix them
 originalSelection = cmds.ls( ) 	## Doesn't properly get the selection.  Fix it
@@ -550,7 +545,8 @@ for x in xrange(5): ## Look at this code and what it does
 
 
 
-</pre>
+```
+
 
 
 
@@ -563,6 +559,7 @@ for x in xrange(5): ## Look at this code and what it does
 
 
 Exercise 6  - Custom Script
+=================================
 
 Write your own short python program, that is useful to you working on your projects. It could be a Maya Python script, but doesn't have to be. Also write a couple paragraphs of english explaining how it works.
 
