@@ -5,6 +5,7 @@ Teaching 3D Python Exercises
 Exercise 01 - General Questions
 ----------------------------------
 
+
 1)  Are scripting languages considered high or low level languages?  (Another way of asking this would be, is Python considered a high or low level language.)
 <br><br><br>
 
@@ -38,6 +39,7 @@ Exercise 01 - General Questions
 <br><br><br>
 
 9)  Translate this example MEL code into Python code:
+
 	polyCube -sx 4 -sy 8 -sz 2;
 <br><br><br>
 
@@ -45,6 +47,7 @@ Exercise 01 - General Questions
 
 	cmds.ls( selection=True )
 <br><br><br>
+
 
 
 
