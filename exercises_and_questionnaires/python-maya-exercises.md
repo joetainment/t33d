@@ -2,8 +2,8 @@ Teaching 3D Python Exercises
 ===============================
 
 
-Exercise 01
-General Questions
+Exercise 01 - General Questions
+----------------------------------
 
 1)  Are scripting languages considered high or low level languages?  (Another way of asking this would be, is Python considered a high or low level language.)
 <br><br><br>
@@ -49,106 +49,182 @@ General Questions
 
 
 Exercise 02
+----------------------------------
 
 For each expression below, give the value it evaluates to (expressed in the simplest form), and give the type of the value.  If it evaluates to no other particular value or type, the value is None and the type is NoneType.  If the value is a string or unicode string, make sure you write the value in quotes.
 
-Assume that maya
+<pre>
+Examples:
 
-examples:	question	y = len("55555")
+
+  question:
+        y = len("55555")
+  
+  answer:
 		value		5
 		type		int
 
-		question	cmds.select( clear=True )
+
+  question:
+        cmds.select( clear=True )
 		value		None
 		type		NoneType		
 
-question	x = cmds.polySphere
+
+  question:  x = cmds.polySphere
+  
+  answer:
 		value		cmds.polySphere
 		type		function
-('builtin_function_or_method' would be fine instead of function, but function is close enough)
-
-Questions:
-				Value				Type
-
-example           "Happy Birthday!"                                             "Happy Birthday!"                             str
-
-example          "Happy" + " " + "Birthday" + "!"                          "Happy Birthday!"                            str
-
-example            4                                                                             4                                            int   
-
-example            1 + 2                                                                       3                                            int   
-
-example            1.0 + 3.1                                                                 4.1                                          float    
-
-example             round                                                                     round                               function
-
-example             round(4)					4.0				float
-
-example              int(4.0)                                                                 4				int
+            note: 'builtin_function_or_method' would be the
+              more precise answer, instead of just function,
+              but function is close enough
 
 
-    len("dog")						
+Here are more example, written the way you should write your answers.
+Each example shows some code. (ending with a line of an expression.
+The answer for each example is:
+    the value     and     that value's type
+
+Examples:
 
 
-    "dog"			
+"Happy Birthday!"
+value:       "Happy Birthday!"
+type:        str
+
+"Happy" + " " + "Birthday" + "!"
+value:       "Happy Birthday!"
+type:        str
+
+4
+value:       4
+type:        int
+
+1+2
+value:       3
+type:        int
+
+1.0 + 3.1
+value:       4.1
+type:        float
+
+z = round
+z
+value:       round
+type:        float
+
+y = round(4)
+y
+value:       4.0
+type:        float
+
+x = int(4.0)
+x
+value:       4
+type:        int
+
+
+
+
+Now provide answers for the following questions:
+
+
+
+
+len("dog")						
+
+
+
+"dog"			
+
 									
-   len				
 
-
-    47 + 0.328						
-
-
-    0.25 + 0.25 + 0.25 + 0.25				
-
-
-    dog_sound = "bark! bark!"				
-
-
-   ( 6, 4+1 )							
-
-    ( 7, 3 )						
-
-    [ 7, 3 ]						
-
-
-    [ 7, 3 ][1]						
-
-cont. next page...
+len				
 
 
 
-Questions (... continued)						Value				Type
+47 + 0.328						
 
 
-    len( [ 7, 3 ] )						
 
-    ( 8, )							
-
-
-    8,							
+x = 0.25 + 0.25 + 0.25 + 0.25				
+x
 
 
-    -8							
+
+dog_sound = "bark! bark!"
+dog_sound			
 
 
-    (-8,)[0]					 	
 
-    { 'website': 'Teaching3D', 'url':'http://teaching3d.com' }	
-
-    { 'website': 'Teaching3D', 'url':'http://teaching3d.com' }['url']	
-
-    9/2							
-
-    9/2.0						
+xy = ( 6, 4+1 )							
+xy
 
 
+
+uv = ( 7, 3 )						
+uv
+
+
+
+nums = [ 7, 3 ]						
+nums
+
+
+
+t = [ 7, 3 ][1]						
+t
+
+
+
+l = len( [ 7, 3 ] )
+l
+
+
+
+( 8, )							
+
+
+
+8,							
+
+
+
+-8							
+
+
+k = (-8,)[0]					 	
+k
+
+
+
+d = { 'website': 'Teaching3D', 'url':'http://teaching3d.com' }	
+d
+
+
+
+u = { 'website': 'Teaching3D', 'url':'http://teaching3d.com' }['url']	
+u
+
+
+
+9/2							
+
+
+
+9/2.0						
+
+
+</pre>
 
 
 
 
 
 Exercise 03
-
+=======================
+<pre>
 Write Python code to create a variable called width and assign it a value of 8.009
 
 
@@ -242,12 +318,15 @@ What is the purpose of the keyword def, as in, what does it do?
 What type would be returned by changeNumber?
 
 
-
+</pre>
 
 
 
 
 Exercise 4
+========================
+<pre>
+
 
 Write Python code to create a variable called width and assign it a value of 6
 
@@ -333,11 +412,14 @@ Given a dictionary stats in which the keys were the names of sports teams, as st
 
 
 
-
+</pre>
 
 
 
 Exercise 5 - Problem Solving
+================================
+
+<pre>
 
 Read the directions and follow the instructions.  Generally, for this assignment you are just finding solution to problems in the shown code, and/or adding some additional code to accomplish the requested tasks.
 
@@ -446,6 +528,9 @@ for x in xrange(5): ## Look at this code and what it does
 
 ##############  End of Question 5  Code ############################
 
+
+
+</pre>
 
 
 
