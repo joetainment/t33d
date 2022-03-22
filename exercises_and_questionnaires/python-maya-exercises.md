@@ -227,71 +227,87 @@ u
 
 Exercise 03
 =======================
-<pre>
+
 Write Python code to create a variable called width and assign it a value of 8.009
-
-
+<br><br><br>
 
 
 What would be the type and value of the variable created by your answer to the last question? (provide 2 answers, the type, and the value)
-
+<br><br><br>
 
 
 
 Write Python code to create a variable called name, and make it equal to "Carl".
-
+<br><br><br>
 
 
 
 What would be the type of addNumbers in the following code:
 (The type of addNumbers itself, not the return value it would give.)
 
+```
 def addNumbers( a, b ):
 	return float( a + b )
+```
 
+<br><br><br>
 
 
 
 Assume the code in the last question had already been run, what would the type and value resulting from the following code:
+
+```
 addNumbers( 8.45, 1.33 )
+```
 
-
+<br><br><br>
 
 
 After the following code executes, what will the type of x be"
+```
 x = [ "pens", "pencils", "papers", "erasers", "staples" ]
-
-
-
+```
 
 What would be the length of the resulting variable x, in the above code example?
 
 
+<br><br><br>
+
 
 
 If the following code was executed, what would the resulting value of n be:
+```
 n=5
 if n >=4:
     n = 11
 else:
     n = 2
+```
 
 
+<br><br><br>
 
 
-
+```
 What would be printed when running the following code example?
 i = 0
 for number in [0,5,2]:
     i = i + 1
 print( i )
+```
 
+<br><br><br>
 
 What would be printed when running the following code example?
+```
 i = 0
 for number in [5,1,2]:
     i = i + number
 print( i )
+```
+
+<br><br><br>
+
 
 
 # Bonus question:   what would be printed if the last line said the following?"
