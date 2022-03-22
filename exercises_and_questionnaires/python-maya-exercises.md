@@ -310,32 +310,33 @@ print( i )
 
 
 
-# Bonus question:   what would be printed if the last line said the following?"
+What would be printed if the last line in the last question said the following?
+```
 print( number)
-
-
+```
+<br><br><br>
 
 What would be the printed result of the following program?
-
+```
 def changeNumber(  numGiven  ):
     r = 3.000 * numGiven
     return r + 2.0
 
 print(  changeNumber( 2 )  ) 
-
-
+```
+<br><br><br>
 
 In the above code example, what is the type of changeNumber itself?
-
+<br><br><br>
 
 
 
 What is the purpose of the keyword def, as in, what does it do?
+<br><br><br>
 
 
-
-What type would be returned by changeNumber?
-
+What type would be returned by calling changeNumber?
+<br><br><br>
 
 </pre>
 
