@@ -1,4 +1,4 @@
-Teaching 3D Python Exercises
+Teaching 3D Python + Maya Exercises
 ===============================
 
 
@@ -374,16 +374,19 @@ Are items in a python dictionary in any particular order?
 
 <br><br><br>
 
----------------------------------------------
-For the next questions, assume the following code:
 
+For the next questions, assume the following code:
+------------------------------------------------------
+
+```
 import pymel.all as pm
 import maya.cmds as cmds
 objs = cmds.ls( )
 for i, obj in enumerate(objs):
     timesPassed = i
     theObject = obj
----------------------------------------------
+
+```
 
 
 
