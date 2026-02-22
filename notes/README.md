@@ -1,4 +1,4 @@
-# T33D Notes
+# T33D Notes - README.md
 ====================
 
 Notes as part of the t33d git repot. These Notes are mostly
