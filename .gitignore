@@ -1,12 +1,38 @@
 #### Gitignore prefixes
 /gitignore*
 gitignore*
-*-gitignore*
-*_gitignore*
 /gitignore-*
 */gitignore_*
 */gitignore-*
+#
+# Very loose freeform ones
+#    add This on the end
 *gitignoreThis*
+#    use - or _ just before gitignore and anything before or after counts
+*-gitignore*
+*_gitignore*
+
+
+## Extra non-standard gitignore
+# 
+## alphabetically sorted gitignore,
+## to show first or last when sorted alphabetically
+# aaa
+/aaa-gitignore*
+/aaa--gitignore*
+/aaa----gitignore*
+# zzz
+/zzz--gitignore*
+/zzz--gitignore*
+/zzz----gitignore*
+
+
+
+
+
+## Claude private memory and git worktree folders
+/.claude/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,0 +1,122 @@
+# t33d_installer.py
+# Drag & drop into Maya viewport, or run directly with Python
+
+import base64
+import zipfile
+import io
+import os
+import site
+import sys
+import subprocess
+
+PAYLOAD_B64 = """
+%%PAYLOAD_B64%%
+""".strip()
+
+def _get_maya_scripts_dir():
+    """Return the platform-appropriate Maya 2025 scripts folder path."""
+    home = os.path.expanduser("~")
+    if sys.platform == "win32":
+        return os.path.join(home, "Documents", "maya", "2025", "scripts")
+    elif sys.platform == "darwin":
+        return os.path.join(home, "Library", "Preferences", "Autodesk", "maya", "2025", "scripts")
+    else:
+        return os.path.join(home, "maya", "2025", "scripts")
+
+
+def _create_shortcut_windows(shortcut_path, target_path):
+    """Create a Windows .lnk shortcut pointing to target_path."""
+    ps = (
+        f"$ws = New-Object -ComObject WScript.Shell; "
+        f"$s = $ws.CreateShortcut('{shortcut_path}'); "
+        f"$s.TargetPath = '{target_path}'; "
+        f"$s.Save()"
+    )
+    subprocess.run(
+        ["powershell", "-NoProfile", "-NonInteractive", "-Command", ps],
+        capture_output=True
+    )
+
+
+def _install_maya_extras(target_dir):
+    """Place a README and (on Windows) a shortcut in the Maya scripts folder."""
+    maya_scripts = _get_maya_scripts_dir()
+    os.makedirs(maya_scripts, exist_ok=True)
+
+    shortcut_note = (
+        "A shortcut named 't33d_site-packages.lnk' in this folder points\n"
+        "to the installed location for easy access.\n"
+        if sys.platform == "win32" else ""
+    )
+    readme_text = (
+        "t33d is installed in Maya's Python site-packages directory.\n\n"
+        f"Installed location:\n"
+        f"  {target_dir}\n\n"
+        f"{shortcut_note}"
+        "To uninstall t33d, delete the 't33d' folder and 't33d.pth' file\n"
+        "from the installed location shown above.\n"
+    )
+    readme_path = os.path.join(maya_scripts, "t33d_installed_README.txt")
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(readme_text)
+    print(f"[t33d] README written to: {readme_path}")
+
+    if sys.platform == "win32":
+        shortcut_path = os.path.join(maya_scripts, "t33d_site-packages.lnk")
+        _create_shortcut_windows(shortcut_path, target_dir)
+        print(f"[t33d] Shortcut created: {shortcut_path}")
+
+
+def install():
+    target_dir = site.USER_SITE
+    os.makedirs(target_dir, exist_ok=True)
+
+    zip_data = base64.b64decode(PAYLOAD_B64)
+
+    with zipfile.ZipFile(io.BytesIO(zip_data)) as zf:
+        zf.extractall(target_dir)
+
+    print(f"[t33d] Installed to: {target_dir}")
+
+    try:
+        _install_maya_extras(target_dir)
+    except Exception as e:
+        print(f"[t33d] Warning: could not create Maya scripts extras: {e}")
+
+    print(f"[t33d] Please restart Maya to complete installation.")
+
+def _is_maya_python():
+    try:
+        import maya.utils
+        return True
+    except ImportError:
+        return False
+
+def _run():
+    if not _is_maya_python():
+        print("[t33d] This installer must be run inside Maya.")
+        print("[t33d] To install: drag and drop this file into the Maya viewport.")
+        return
+
+    try:
+        install()
+    except Exception as e:
+        print(f"[t33d] Installation failed: {e}")
+        raise
+
+# Maya drag & drop entry point
+def onMayaDroppedPythonFile(*args, **kwargs):
+    _run()
+
+def _wait_for_keypress():
+    try:
+        import msvcrt
+        print("\nPress any key to exit...")
+        msvcrt.getch()
+    except ImportError:
+        input("\nPress Enter to exit...")
+
+# Direct execution entry point
+if __name__ == "__main__":
+    _run()
+    _wait_for_keypress()

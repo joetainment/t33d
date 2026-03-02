@@ -1,0 +1,246 @@
+{
+  "main": {
+    "id": "44f9efb64c4773cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "dcc0e70776dc4976",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f5dd8a0782d7b4c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00--About-The-T33D-Project-Itself/00--About-The-T33D-Project-Itself.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00--About-The-T33D-Project-Itself"
+            }
+          }
+        ]
+      },
+      {
+        "id": "41f1a5b131023376",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8b1f163961bfbbb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00--About-The-T33D-Project-Itself/Naming-Conventions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Naming-Conventions"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "da66a140cb037079",
+    "type": "split",
+    "children": [
+      {
+        "id": "bad1e13be68dd385",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f289a82a509d38c8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c12f6739449f820d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "dfe543e8fff65324",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ea04352251fc0e46",
+    "type": "split",
+    "children": [
+      {
+        "id": "5cc924eb4aa07524",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d867d3939ce82ae",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "v.base",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for v"
+            }
+          },
+          {
+            "id": "306a7405a0c5cd48",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "v.base",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from v"
+            }
+          },
+          {
+            "id": "0740b5df25615582",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b41cc0b1a35aec8d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "db3aa52b83103391",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "v.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of v"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "f8b1f163961bfbbb",
+  "lastOpenFiles": [
+    "00--About-The-T33D-Project-Itself/Spacing.md",
+    "00--About-The-T33D-Project-Itself/Heading-Style.md",
+    "Where-to-Put-Your-Main-Notes-Folder.md",
+    "docs._gitignoreThis/Ready-to-Integrate-Into-Main-T33D-Notes/Where-to-Put-Your-Main-Notes-Folder.md",
+    "docs._gitignoreThis/Ready-to-Integrate-Into-Main-T33D-Notes/Where to put your main notes folder.md",
+    "docs._gitignoreThis/Ready-to-Integrate-Into-Main-T33D-Notes",
+    "docs._gitignoreThis/New folder",
+    "docs._gitignoreThis/misc--started-by-joe/Where to put your main notes folder.md",
+    "docs._gitignoreThis/misc--started-by-joe/to-move.md",
+    "docs._gitignoreThis/misc--started-by-joe/large files short-ut could be here to a seperate folder to keep large files in.md",
+    "docs._gitignoreThis/misc--started-by-joe/index.md",
+    "docs._gitignoreThis/misc--started-by-joe/folder name - I actually recommend just calling your folder simple the single word capitalized Notes.md",
+    "docs._gitignoreThis/misc--started-by-joe/folder location - I recommend putting this in your users home folder.md",
+    "docs._gitignoreThis/misc--started-by-joe/zzz--old-already-moved--000  Notetaking  Main.md",
+    "docs._gitignoreThis/misc--started-by-joe",
+    "00--About-The-T33D-Project-Itself/Em-Dashes.md",
+    "00--About-The-T33D-Project-Itself/00--About-The-T33D-Project-Itself.md",
+    "v.base",
+    "Note-Taking/Note-Taking.md",
+    "Note-Taking/New Text Document.txt",
+    "Note-Taking/Markdown-Based-Note-Taking/Markdown-Based-Note-Taking.md",
+    "Note-Taking/Markdown-Based-Note-Taking/Why Use Markdown_Notetaking - Main - Copy.md",
+    "Note-Taking/Markdown-Based-Note-Taking/Why Use Markdown_Notetaking - Main.md",
+    "Note-Taking/Markdown-Based-Note-Taking",
+    "Note-Taking/New folder",
+    "notes-example-folder-related/huge-video-lets-pretend--wing-it-short-film.webm",
+    "notes-example-folder-related/high-res-image-lets-pretend.kra",
+    "notes-example-folder-related/huge-massive-text-file-lets-pretend.txt",
+    "notes-example-folder-related/high-res-image-lets-pretend.jpg",
+    "About-The-T33D-Project-Itself/About-The-T33D-Project-Itself.md",
+    "About-The-T33D-Project-Itself/Style-Guide.md",
+    "About-The-T33D-Project-Itself/Why-no-Spaces.md",
+    "About-The-T33D-Project-Itself/Planning and Dev of the T33D Project Itself.md",
+    "About-The-T33D-Project-Itself/about-the-t33d-project-itself.md",
+    "About-The-T33D-Project-Itself/CLAUDE.md",
+    "About-The-T33D-Project-Itself/Naming-Conventions.md",
+    "About-The-T33D-Project-Itself/Git-Ignore-Strategies-for-End-User-Editable-Folders-in-T33D.md"
+  ]
+}
