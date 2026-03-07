@@ -1,0 +1,23 @@
+[build-system]
+requires      = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "t33d-maya-jupyter-kernel"
+version         = "0.1.0"
+description     = "JupyterLab kernel for driving Python in Autodesk Maya 2025 (full GUI instance)"
+readme          = "README.md"
+requires-python = ">=3.9"
+dependencies    = [
+    "ipykernel>=6.0",      # base kernel class + ZMQ plumbing
+    "jupyter-client>=7.0", # KernelSpecManager for install.py
+]
+
+[project.scripts]
+# After `pip install -e .`, run `install-maya-kernel` instead of
+# `python -m maya_jupyter.install`.
+install-maya-kernel = "maya_jupyter.install:main"
+
+[tool.setuptools.packages.find]
+where   = ["."]
+include = ["maya_jupyter*"]

@@ -1,0 +1,124 @@
+"""
+t33d_example_use_api_in_undoable_way
+
+Demonstrates how to use the Maya Python API (maya.api.OpenMaya) inside a
+plain script -- not a plugin -- while keeping the result undoable.
+
+THE CORE PROBLEM
+----------------
+Maya's API bypasses the undo queue by default. If you call MFnMesh methods
+like deleteFace() or setPoints() directly, those changes will not undo when
+the user presses Ctrl+Z. This is by design: the API is meant for performance-
+critical work, and undo bookkeeping has overhead.
+
+THE SOLUTION FOR SCRIPTS (not plugins)
+---------------------------------------
+In a plugin you would implement MPxCommand with doIt() / undoIt() / redoIt().
+In a plain script the pattern is simpler:
+
+  1. Use the API for READING -- it is always safe and always faster than cmds.
+  2. Use cmds for WRITING -- cmds calls automatically register with the undo queue.
+  3. Wrap the whole thing in a single undo chunk so the user sees one undo step.
+
+This example:
+  - Selects a mesh (uses the API to iterate verts and find the negative-X ones)
+  - Deletes those verts via cmds.delete() so the operation is undoable
+  - Wraps everything in an openChunk / closeChunk pair
+
+Run this with a mesh selected.
+"""
+
+import maya.cmds as cmds
+import maya.api.OpenMaya as om
+
+
+# ---------------------------------------------------------------------------
+# Helper -- the actual logic
+# ---------------------------------------------------------------------------
+
+def _findNegativeXVerts(dagPath):
+    """
+    Use the API to get all vertex positions and return the indices of those
+    with a negative X coordinate (world space).
+
+    This is the part where using the API pays off: MFnMesh.getPoints() returns
+    all positions in one call as a C-level MPointArray, which is much faster
+    than calling cmds.xform() or cmds.pointPosition() per vertex in a loop.
+    """
+    meshFn = om.MFnMesh(dagPath)
+    points = meshFn.getPoints(om.MSpace.kWorld)   # MPointArray, one call
+
+    return [i for i, p in enumerate(points) if p.x < 0.0]
+
+
+def deleteNegativeXVerts():
+    """
+    Delete all vertices (and their incident faces) on the negative X side of
+    every selected mesh, as a single undoable operation.
+    """
+
+    # --- 1. Get the selection via the API -----------------------------------
+    # MGlobal.getActiveSelectionList() is the API equivalent of cmds.ls(sl=True).
+    selList = om.MGlobal.getActiveSelectionList()
+
+    if selList.isEmpty():
+        cmds.warning('Select one or more meshes first.')
+        return
+
+    # Collect (meshDagPath, [vertIndex, ...]) pairs across all selected items.
+    toDelete = []
+
+    for i in range(selList.length()):
+        try:
+            dagPath = selList.getDagPath(i)
+        except TypeError:
+            # Selection item is not a DAG node (e.g. a set member); skip it.
+            continue
+
+        # Extend the path to the shape if we were given a transform.
+        dagPath.extendToShape()
+
+        if not dagPath.hasFn(om.MFn.kMesh):
+            continue
+
+        negVerts = _findNegativeXVerts(dagPath)
+        if negVerts:
+            toDelete.append((dagPath.fullPathName(), negVerts))
+
+    if not toDelete:
+        cmds.warning('No vertices found on the negative X side of the selected mesh(es).')
+        return
+
+    # --- 2. Build cmds-style component strings ------------------------------
+    # We gathered all the information we need from the API.
+    # From here on we use cmds so that Maya registers the changes in the undo queue.
+
+    vertComponents = []
+    for meshPath, indices in toDelete:
+        for idx in indices:
+            vertComponents.append('{}.vtx[{}]'.format(meshPath, idx))
+
+    # --- 3. Wrap the destructive cmds calls in a single undo chunk ----------
+    #
+    # openChunk / closeChunk tell Maya to record everything between them as one
+    # atomic undo step.  Always use try/finally so the chunk is closed even if
+    # an exception is raised -- an unclosed chunk breaks the entire undo queue.
+
+    cmds.undoInfo(openChunk=True, chunkName='deleteNegativeXVerts')
+    try:
+        cmds.select(vertComponents, replace=True)
+        cmds.delete()
+        # Restore an empty selection so it doesn't look weird after the delete.
+        cmds.select(clear=True)
+    finally:
+        cmds.undoInfo(closeChunk=True)
+
+    totalVerts = sum(len(v) for _, v in toDelete)
+    print('Deleted {} vertex/vertices on the negative X side.'.format(totalVerts))
+
+
+# ---------------------------------------------------------------------------
+# Entry point
+# ---------------------------------------------------------------------------
+
+deleteNegativeXVerts()

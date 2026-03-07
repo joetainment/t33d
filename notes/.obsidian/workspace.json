@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "44f9efb64c4773cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce322cb5d1c6f6f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b41ad2af91b17bec",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "da66a140cb037079",
+    "type": "split",
+    "children": [
+      {
+        "id": "bad1e13be68dd385",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f289a82a509d38c8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c12f6739449f820d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "dfe543e8fff65324",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ea04352251fc0e46",
+    "type": "split",
+    "children": [
+      {
+        "id": "5cc924eb4aa07524",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d867d3939ce82ae",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "v.base",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for v"
+            }
+          },
+          {
+            "id": "306a7405a0c5cd48",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "v.base",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from v"
+            }
+          },
+          {
+            "id": "0740b5df25615582",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b41cc0b1a35aec8d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "db3aa52b83103391",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "v.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of v"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b41ad2af91b17bec",
+  "lastOpenFiles": [
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Mesh-Modeling-Theory/Polygon-Mesh-Modeling-Theory.md.tmp.2941.1772661977255",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Topology-For-Polygon-Meshes/Topology-For-Polygon-Meshes.md",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Topology-For-Polygon-Meshes",
+    "3D-Art/Theory-of-3D-Computer-Graphics/New folder",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Mesh-Modeling-Theory/Polygon-Mesh-Modeling-Theory.md.tmp.2941.1772657512807",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Mesh-Modeling-Theory/Polygon-Mesh-Modeling-Theory.md.tmp.2941.1772657509016",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Mesh-Modeling-Theory/Polygon-Mesh-Modeling-Theory.md.tmp.2941.1772656994028",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Mesh-Modeling-Theory/Polygon-Mesh-Modeling-Theory.md.tmp.2941.1772656989325",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Meshes/Polygon-Meshes.md.tmp.2941.1772656973536",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Meshes/Polygon-Meshes.md.tmp.2941.1772656954435",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Meshes/Polygon-Meshes.md.tmp.2941.1772656947824",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Meshes/Polygon-Meshes.md.tmp.2941.1772656942710",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Meshes/Polygon-Meshes.md",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Polygon-Mesh-Modeling-Theory/Polygon-Mesh-Modeling-Theory.md",
+    "3D-Art/Theory-of-3D-Computer-Graphics/UV-Mapping-Theory/UV-Mapping-Theory--Part-4/UV-Mapping-Theory--Part-4.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Ideas-Drafts-of-Article-Sections/Understanding 3D Computer Graphics.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Ideas-Drafts-of-Article-Sections/Quick-Thoughts--Incorporate-These-Into-Main-Notes-Later.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Ideas-Drafts-of-Article-Sections/Topology-for-Subdiv.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Ideas-Drafts-of-Article-Sections/Polygon-Meshes.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Drafts-of-Articles/Understanding 3D Computer Graphics.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Drafts-of-Articles/Topology-for-Subdiv.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Drafts-of-Articles/Quick-Thoughts--Incorporate-These-Into-Main-Notes-Later.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Drafts-of-Articles/Polygon-Meshes.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Drafts/Understanding 3D Computer Graphics.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Drafts/Topology-for-Subdiv.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Drafts/Quick-Thoughts--Incorporate-These-Into-Main-Notes-Later.md",
+    "__docs._gitignoreThis/Theory/Polygon-Modeling-Theory--Drafts/Polygon-Meshes.md",
+    "3D-Art/Theory-of-3D-Computer-Graphics/UV-Mapping-Theory/UV-Mapping-Theory.md",
+    "3D-Art/Theory-of-3D-Computer-Graphics/UV-Mapping-Theory/UV-Mapping-Theory--Part-2/UV-Mapping-Theory--Part-2.md",
+    "3D-Art/3D-Art-Apps.md",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/Understanding-3D-Computer-Graphics.md",
+    "docs._gitignoreThis/Theory/Understanding 3D Computer Graphics.md",
+    "docs._gitignoreThis/Theory/Understanding-3D-Computer-Graphics/Understanding-3D-Computer-Graphics.md",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/images/three-numbered-vertices.png",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/images/polygon-mesh-flat-maya-viewport.png",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/images/review-vertex-selected-on-sphere.png",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/images/review-triangle-selected-on-sphere.png",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/images/vertices-with-positive-and-negative-coordinates.png",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/images/xy-coordinate-system-with-origin.png",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/images/vertex-in-3dsmax-grid.png",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/images/triangle-with-surface.png",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/images/quad-showing-invisible-internal-edge.png",
+    "3D-Art/Theory-of-3D-Computer-Graphics/Understanding-3D-Computer-Graphics/images/hierarchy-hand-xray-parent-child-labels.png",
+    "README.md",
+    "Big-Files-Related-To-Our-Notes/Lets-Pretend-This-Folder-Contains-Big-Files/cmds-related-to-the-wing-it-movie-file-included-here.md",
+    "Big-Files-Related-To-Our-Notes/Big-Files-Related-To-Our-Notes.md"
+  ]
+}
